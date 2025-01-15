@@ -1,0 +1,161 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/wedding3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position:none;
+    
+
+
+
+}
+
+/* Navbar */
+* Navbar */
+.navbar {
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    padding:0.1rem 10px;
+    background-color: rgba(250, 250, 250, 0.9);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.942);
+    color: white;
+    border-top-left-radius: 50px ;
+    border-bottom-right-radius: 60px;
+    
+}
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+}
+.nav-links {
+    display: flex;
+    gap: 20px;
+
+}
+.nav-links li {
+    list-style: none;
+}
+.nav-links a {
+    text-decoration: none;
+    color: rgba(158, 83, 224, 0.925);
+    font-size: 18px;
+    padding: 10px 10px;
+    text-align: end;
+   
+}
+.nav-links a:hover {
+    color: #000000;
+}
+
+
+
+
+    
+
+
+
+/* Feedback Section */
+.feedback-section {
+    
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative;
+}
+.feedback-section::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0); */
+    z-index: 1;
+}
+.feedback-container {
+    background-color: rgba(162, 115, 199, 0.775);
+    padding: 30px 40px;
+    border-radius: 15px;
+    width: 190%;
+    max-width: 600px;
+    z-index: 2;
+    text-align: center;
+}
+.feedback-container h1 {
+    font-size: 1.8em;
+    color: #000000;
+    margin-bottom: 10px;
+}
+.feedback-container p {
+    font-size: 1em;
+    color: #0e0e0e;
+    margin-bottom: 30px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.form-group div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #2c2b2b;
+    border-radius: 5px;
+    font-size: 1em;
+}
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #9b57d7;
+}
+.radio-group {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.radio-group label {
+    font-size: 1em;
+    color: #060606;
+}
+.submit-btn {
+    background-color: #ffffff;
+    color: rgb(9, 9, 9);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    
+}
+.submit-btn:hover {
+    background-color: #8752ad;
+    
+}

@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(189, 110, 218, 0.803);
+  
+}
+
+.navbar {
+display: flex;
+position: fixed;
+justify-content: space-between;
+align-items: center;
+padding: 10px 20px;
+background-color: white;
+color: rgba(158, 83, 224, 0.814);
+border-bottom-right-radius: 30px;
+border-bottom-left-radius: 30px;
+width: 100%;
+
+
+
+}
+
+.logo {
+font-size: 1.5em;
+font-weight: bold;
+width: 100%;
+height: 65px;
+padding: center;
+}
+
+.nav-links {
+display: flex;
+gap: 20px;
+}
+
+.nav-links  a {
+color: rgba(158, 83, 224, 0.925);
+text-transform: uppercase;
+transition: color 0.3s;
+}
+
+.nav-links  a:hover {
+color: #020202;
+}
+
+
+.hamburger {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
+
+.hamburger span {
+background: white;
+height: 3px;
+margin: 4px 0;
+width: 25px;
+transition: all 0.3s ease-in-out;
+}
+
+
+@media (max-width: 768px) {
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    color: rgb(158, 83, 224);
+    top: 60px;
+    right: 0;
+    background-color: white;
+    width: 100%;
+    text-align: center;
+}
+
+.nav-links.active {
+    display: flex;
+}
+
+.hamburger {
+    display: flex;
+}
+}
+
+
+
+.selection .img{
+
+object-fit: cover;
+
+
+
+}
