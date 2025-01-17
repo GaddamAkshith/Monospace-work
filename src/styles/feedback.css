@@ -4,23 +4,28 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
+body  .feedback{
     font-family: Arial, sans-serif;
-    background: url('../assets/wedding3.png');
+    background-image: url('../assets/wedding3.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 100vh;
-    position:none;
+    width: 100%;
+    position:fixed;
     
 
 
 
 }
 
+
 /* Navbar */
-* Navbar */
-.navbar {
+
+
+
+
+.navbar-feedback {
     
     display: flex;
     justify-content: space-between;
@@ -33,7 +38,10 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.942);
     color: white;
     border-top-left-radius: 50px ;
-    border-bottom-right-radius: 60px;
+    border-bottom-right-radius: 60px; 
+
+
+   
     
 }
 .navbar .logo {
@@ -64,8 +72,7 @@ body {
 
 
 
-
-    
+ 
 
 
 
