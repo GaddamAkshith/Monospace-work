@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './styles/feedback.css'; 
 import logo from "./assets/logo.png";
 import { Link } from 'react-router-dom';
-// Updated path to the CSS file
 
 const Feedback = () => {
     const [fullName, setFullName] = useState('');
@@ -12,14 +11,11 @@ const Feedback = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
         console.log({ fullName, phone, feedback, callback });
-        // Here you can add functionality to send the feedback to a server
     };
 
     return (
-        
-       <div  className='feedback'>
+       <div className='feedback'>
             {/* Navbar */}
             <div className='navbar-container'>
             <nav className="navbar-feedback">
@@ -30,8 +26,8 @@ const Feedback = () => {
                 </div>
                 <ul className="nav-links">
                     <li><Link to={'/'}>Home</Link></li>
-                    <li><a href="#services-section">Services</a></li>
-                    <li><a href="#">Product</a></li>
+                    <li><Link to="#services-section">Services</Link></li>
+                    <li><Link to="/product">Product</Link></li>
                 </ul>
                 <div className="hamburger" onClick={() => document.querySelector('.nav-links').classList.toggle('active')}>
                     <span></span>
@@ -73,7 +69,6 @@ const Feedback = () => {
                 </div>
             </section>
         </div>
-        
     );
 };
 

@@ -1,18 +1,10 @@
 import React from "react";
-// import Gallery from "./Gallery";
-// import WeddingSection from "./WeddingSection";
-// import ServicesSection from "./ServicesSection";
-// import Footer from "./Footer";
-// import './styles/index1.css'; 
+import './styles/herosection.css'; 
+
 
 const HeroSection = () => {
   return (
-    
-   
-    <div>
-   
     <div className="hero-section">
-    
       <div className="content">
         <h1 className="cursive-text">
           Everything <br />
@@ -27,15 +19,8 @@ const HeroSection = () => {
         </div>
       </div>
     </div>
-    {/* <Gallery/>
-    <WeddingSection/>
-    <ServicesSection/>
-    <Footer/> */}
-    </div>
-     
-
-
   );
 };
 
 export default HeroSection;
+

@@ -25,6 +25,6 @@ const Hero = () => {
       </header>
     </main>
   );
-}
+};
 
 export default Hero;

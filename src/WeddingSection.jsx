@@ -1,7 +1,7 @@
 import React from "react";
 import wedding2 from "./assets/wedding2.jpg";
 import wedding1 from "./assets/wedding1.jpg";
-// import './styles/index1.css'; 
+import './styles/herosection.css'; 
 
 const WeddingSection = () => {
   const weddings = [

@@ -1,17 +1,9 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
 import logo from "./assets/logo.png"; // Updated import statement
-
-
 import './styles/footer.css'; // Assuming styles are in App.css
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
-  const handleHamburgerClick = () => {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.classList.toggle('active');
-  };
-
   return (
     <div>
       <div className="footer">
@@ -21,41 +13,40 @@ const Footer = () => {
         <div className="content">
           <div className="services">
             <h4>Services</h4>
-            <p><a href="#">Wedding Decor</a></p>
-            <p><a href="#">Wedding Photography</a></p>
-            <p><a href="#">Venue Consultation</a></p>
-            <p><a href="#">Vendor Management</a></p>
-            <p><a href="#">Lead Dashboard</a></p>
+            <p><a href="/wedding-decor">Wedding Decor</a></p>
+            <p><a href="/wedding-photography">Wedding Photography</a></p>
+            <p><a href="/venue-consultation">Venue Consultation</a></p>
+            <p><a href="/vendor-management">Vendor Management</a></p>
+            <p><a href="/lead-dashboard">Lead Dashboard</a></p>
           </div>
           <div className="social-media">
             <h4>Social</h4>
             <p><a href="https://in.linkedin.com/company/monospacetech"><i className="fab fa-linkedin"></i> Linkedin</a></p>
-            <p><a href="#"><i className="fab fa-twitter"></i> Twitter</a></p>
+            <p><a href="#/"><i className="fab fa-twitter"></i> Twitter</a></p>
             <p><a href="https://whatsapp.com/channel/0029Vb1rOAvLY6dB4uW42O2e"><i className="fab fa-Whatsapp"></i>Whatsapp </a></p>
             <p><a href="https://www.facebook.com/share/1aCHpPDXRQ/ "><i className="fab fa-facebook"></i> Facebook</a></p>
             <p><a href="https://www.instagram.com/monospace_india?igsh=azFkaTVmOGU4Yzl5"><i className="fab fa-instagram"></i> Instagram</a></p>
           </div>
           <div className="links">
             <h4>Quick links</h4>
-            <p><a href="#">Home</a></p>
-            <p><a href="#">About</a></p>
-            <p><a href="#">Blogs</a></p>
-            <p><a href="#">Contact</a></p>
+            <p><a href="/">Home</a></p>
+            <p><a href="/about">About</a></p>
+            <p><a href="/blogs">Blogs</a></p>
+            <p><a href="/contact">Contact</a></p>
           </div>
           <div className="links">
             <h4>Company Policy</h4>
-            <p><a href="#">Terms & Conditions</a></p>
-            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="/terms">Terms & Conditions</a></p>
+            <p><a href="/privacy">Privacy Policy</a></p>
             <p><Link to={'/feedback'}>Feedback Form</Link></p>
-            
           </div>
           <div className="details">
             <h4 className="fas fa-map-marker-alt fa-2x">Address</h4>
             <p>Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit. Cupiditate, qui!</p>
             <h4 className="mobile">Mobile</h4>
-            <p><a href="#">+91 9261141701</a></p>
+            <p><a href="tel:+919261141701">+91 9261141701</a></p>
             <h4 className="mail">Email</h4>
-            <p><a href="#">info@lilacmosaic.com</a></p>
+            <p><a href="mailto:info@lilacmosaic.com">info@lilacmosaic.com</a></p>
           </div>
         </div>
         <footer>

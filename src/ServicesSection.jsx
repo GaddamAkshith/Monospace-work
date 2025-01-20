@@ -1,6 +1,6 @@
 import React from "react";
 import service from "./assets/service.jpg";
-// import './styles/index1.css'; 
+import './styles/herosection.css';  
 
 const ServicesSection = () => {
   const services = [
